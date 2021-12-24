@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20A188DF-2F32-4DE0-8BEC-119CCB931132}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Restorant_Otomasyon</RootNamespace>
+    <AssemblyName>Restorant_Otomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WMPLib.1.0.0\lib\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>C:\Users\djadi\Desktop\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\packages\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cAdisyon.cs" />
+    <Compile Include="cMasalar.cs" />
+    <Compile Include="cMusteriler.cs" />
+    <Compile Include="cOdeme.cs" />
+    <Compile Include="cPaketler.cs" />
+    <Compile Include="cPersonelGorev.cs" />
+    <Compile Include="cPersonelHareketleri.cs" />
+    <Compile Include="cRezervasyon.cs" />
+    <Compile Include="cSiparis.cs" />
+    <Compile Include="cUrunCesitleri.cs" />
+    <Compile Include="cUrunler.cs" />
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAyarlar.Designer.cs">
+      <DependentUpon>frmAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKassa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKassa.Designer.cs">
+      <DependentUpon>frmKassa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteri.Designer.cs">
+      <DependentUpon>frmMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMutfak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMutfak.Designer.cs">
+      <DependentUpon>frmMutfak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOplata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOplata.Designer.cs">
+      <DependentUpon>frmOplata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaketSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaketSiparis.Designer.cs">
+      <DependentUpon>frmPaketSiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapor.Designer.cs">
+      <DependentUpon>frmRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRezervasyon.Designer.cs">
+      <DependentUpon>frmRezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSiparisKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiparisKontrol.Designer.cs">
+      <DependentUpon>frmSiparisKontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVxod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVxod.Designer.cs">
+      <DependentUpon>frmVxod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYeniMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYeniMusteri.Designer.cs">
+      <DependentUpon>frmYeniMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmZakaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZakaz.Designer.cs">
+      <DependentUpon>frmZakaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baglanti.cs" />
+    <Compile Include="cPersoneller.cs" />
+    <Compile Include="Glavn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glavn.Designer.cs">
+      <DependentUpon>Glavn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAyarlar.resx">
+      <DependentUpon>frmAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKassa.resx">
+      <DependentUpon>frmKassa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteri.resx">
+      <DependentUpon>frmMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMutfak.resx">
+      <DependentUpon>frmMutfak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOplata.resx">
+      <DependentUpon>frmOplata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaketSiparis.resx">
+      <DependentUpon>frmPaketSiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapor.resx">
+      <DependentUpon>frmRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRezervasyon.resx">
+      <DependentUpon>frmRezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSiparisKontrol.resx">
+      <DependentUpon>frmSiparisKontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVxod.resx">
+      <DependentUpon>frmVxod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYeniMusteri.resx">
+      <DependentUpon>frmYeniMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmZakaz.resx">
+      <DependentUpon>frmZakaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glavn.resx">
+      <DependentUpon>Glavn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kastamonu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\главное2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edfcde.jpg" />
+    <None Include="Resources\desk.png" />
+    <None Include="Resources\bron.png" />
+    <None Include="Resources\lapa.sobaki.jpg" />
+    <None Include="Resources\arrow-64-64 %281%29.png" />
+    <None Include="Resources\x-mark-4-64.png" />
+    <None Include="Resources\table-64.png" />
+    <None Include="Resources\booos.png" />
+    <None Include="Resources\brongel.png" />
+    <None Include="Resources\money.png" />
+    <None Include="Resources\rasp.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\click.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\meal.png" />
+    <None Include="Resources\order.png" />
+    <None Include="Resources\prv.png" />
+    <None Include="Resources\loupe.png" />
+    <None Include="Resources\database.png" />
+    <None Include="Resources\gif.gif" />
+    <None Include="Resources\expand_icon-icons.com_69659.png" />
+    <None Include="Resources\icons8-windows-metro-52.png" />
+    <Content Include="Resources\главное1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
